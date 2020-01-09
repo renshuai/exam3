@@ -1,7 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+// import Home from '../views/Home.vue'
 import BookManger from "../views/BookManger";
+import Spider from  '../components/spider'
+import Save from  '../components/save'
+import MochaTest from '../components/mocha';
+
 
 Vue.use(VueRouter)
 
@@ -14,17 +18,19 @@ const routes = [
     component: BookManger
   },
   {
-    path: '/home',
-    name: 'home',
-    component: Home
+    path: '/spider',
+    name: 'Spider',
+    component: Spider
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/save',
+    name: 'save',
+    component: Save
+  },
+  {
+    path: '/mocha',
+    name: 'MochaTest',
+    component: MochaTest
   }
 ]
 const router = new VueRouter({

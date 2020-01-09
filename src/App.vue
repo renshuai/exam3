@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-        <router-link to="/">Book Manager</router-link> |
-      <router-link to="/home">Home</router-link> |
-      <router-link to="/about">About</router-link>
+        <router-link to="/">音乐专辑管理</router-link> |
+      <router-link to="/spider">“爬取模块”</router-link> |
+      <router-link to="/save">存储模块</router-link> |
+      <router-link to="/mocha">测试程序</router-link> |
+      <router-link to="/api">音乐专辑各rest接口的测试地址</router-link>
     </div>
     <router-view/>
   </div>
