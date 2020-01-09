@@ -118,7 +118,7 @@
                 books: [],
                 albums: [],
                 // baseUrl: 'http://39.98.54.111:3000/books',
-                baseUrl: 'http://localhost:3000/albums',
+                baseUrl: '/albums',
                 isShowDetailDialog: false,
                 currentAlbum: null,
                 editable: true,
